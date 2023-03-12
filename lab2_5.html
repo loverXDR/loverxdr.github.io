@@ -7,9 +7,36 @@
 <body>
 <h1>Форма регистрации пользователя</h1>
 <form action="*">
-    <p>
-    E-mail <input type="email">
-    </p>
+<table border="0">
+    <tr>
+    <td>E-mail</td><td><input type="email" value="Введите E-mail" required></td>
+    </tr>
+    <tr>
+    <td>Пароль</td> <td><input type="password" value="Введите Пароль" required></td>
+    </td>
+    <tr>
+    <td>Пол</td> <td><input type="radio" name="subject" value="Мужчина">Мужчина
+        <input type="radio" name="subject" value="Женщина">Женщина<br>
+    </tr>
+    <tr>
+        <td>Год рождения</td><td><input type="date"></td>
+    </tr>
+    <tr>
+        <td>Я знаю</td><td><input type="checkbox" name="Русский" value="yes" checked>Русский<br>
+            <input type="checkbox" name="Испанский" value="yes">Испанский<br>
+            <input type="checkbox" name="Немецкий" value="yes">Немецкий<br>
+            <input type="checkbox" name="Английский" value="yes">Английский<br>
+            <input type="checkbox" name="Китайский" value="yes">Китайский<br>
+        </td>
+    </tr>
+    <tr >
+        <td>Обо мне</td><td><textarea>Напишите коротко о себе</textarea></td>
+    </tr>
+    <tr>
+        <td><input type="submit" name="Готово"></td><td><input type="reset" name="Очистить"></td>
+    </tr>
+    
 </form>
+</table>
 </body>
 </html>

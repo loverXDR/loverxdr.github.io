@@ -18,23 +18,22 @@ td, th {
 </head>
 <body style="background-color: black;color: white;">
 	<table>
-		<caption>1-й шаблон таблицы</caption>
+		<caption>1-я таблица</caption>
 		<tbody>
 		<tr>
-			<th>1</th>
-			<td>2</td>
-			<td>3</td>
+			<th rowspan="2">1</th>
+			<td colspan="2">2</td>
+
 		</tr>
 		<tr>
-			<th>4</th>
-			<td>5</td>
+			<th>5</th>
 			<td>6</td>
 		</tr>
 		</tbody>
 	</table>
 
 	<table>
-		<caption>2-й шаблон таблицы</caption>
+		<caption>2-я таблица</caption>
 		<tbody>
 		<tr>
 			<th colspan="2">1</th>
@@ -45,6 +44,36 @@ td, th {
 		</tr>
 		<tr>
 			<td>6</td>
+		</tr>
+		</tbody>
+	</table>
+	<table>
+		<caption>3-я таблица</caption>
+		<tbody>
+		<tr>
+			<th>1</th>
+			<th rowspan="2">2</th>
+		</tr>
+		<tr>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td colspan="2">5</td>
+		</tr>
+		</tbody>
+	</table>
+    <table>
+		<caption>4-я таблица</caption>
+		<tbody>
+		<tr>
+			<th colspan="2">1</th>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td colspan="2">5</td>
 		</tr>
 		</tbody>
 	</table>

@@ -12,5 +12,6 @@ body {
 }
 em {
     font-style: italic;
-    color: green
+    color: green;
+    text-decoration-style: double;
 }

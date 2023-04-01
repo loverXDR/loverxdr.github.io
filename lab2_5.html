@@ -9,14 +9,14 @@
 <form action="*">
 <table style="border: 0;">
     <tr>
-    <td>E-mail</td><td><input type="email" placeholder="Введите E-mail" required></td>
+    <td><label for="email">E-mail</label></td><td><input id="email" type="email" placeholder="Введите E-mail" required></td>
     </tr>
     <tr>
-    <td>Пароль</td> <td><input type="password" placeholder="Введите Пароль" required></td>
+    <td><label for="passwd">Пароль</label></td> <td><input id="passwd" type="password" placeholder="Введите Пароль" required></td>
     </tr>
     <tr>
-    <td>Пол</td> <td><input type="radio" name="subject" value="Мужчина">Мужчина
-        <input type="radio" name="subject" value="Женщина">Женщина<br>
+    <td>Пол</td> <td><label><input type="radio" name="subject" value="Мужчина">Мужчина</label>
+        <label><input type="radio" name="subject" value="Женщина">Женщина</label><br>
     </tr>
     <tr>
         <td>Год рождения</td><td><select id="selectID">
@@ -87,7 +87,7 @@
             </select></td>
     </tr>
     <tr>
-        <td>Я знаю</td><td><label><input type="checkbox" name="Русский" value="yes" checked="default">Русский</label><br>
+        <td>Я знаю</td> <td><label><input type="checkbox" name="Русский" value="yes" checked="default">Русский</label><br>
             <label><input type="checkbox" name="Испанский" value="yes">Испанский</label><br>
             <label><input type="checkbox" name="Немецкий" value="yes">Немецкий</label><br>
             <label><input type="checkbox" name="Английский" value="yes">Английский</label><br>

@@ -9,10 +9,10 @@
 <form action="*">
 <table style="border: 0;">
     <tr>
-    <td>E-mail</td><td><input type="email" value="Введите E-mail" required></td>
+    <td>E-mail</td><td><input type="email" placeholder="Введите E-mail" required></td>
     </tr>
     <tr>
-    <td>Пароль</td> <td><input type="password" value="Введите Пароль" required></td>
+    <td>Пароль</td> <td><input type="password" placeholder="Введите Пароль" required></td>
     </tr>
     <tr>
     <td>Пол</td> <td><input type="radio" name="subject" value="Мужчина">Мужчина
@@ -87,7 +87,7 @@
             </select></td>
     </tr>
     <tr>
-        <td>Я знаю</td><td><label><input type="checkbox" name="Русский" value="yes">Русский</label><br>
+        <td>Я знаю</td><td><label><input type="checkbox" name="Русский" value="yes" checked="default">Русский</label><br>
             <label><input type="checkbox" name="Испанский" value="yes">Испанский</label><br>
             <label><input type="checkbox" name="Немецкий" value="yes">Немецкий</label><br>
             <label><input type="checkbox" name="Английский" value="yes">Английский</label><br>
@@ -96,7 +96,7 @@
         </td>
     </tr>
     <tr >
-        <td>Обо мне</td><td><textarea>Напишите коротко о себе</textarea></td>
+        <td><label for="aboutme">Обо мне</label></td><td><input type="text" id="aboutme" placeholder="Напишите коротко о себе"></td>
     </tr>
     <tr>
         <td><button type="submit">Отправить</button></td><td><button type="reset">Очистить</button></td>

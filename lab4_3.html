@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <title>Оформление вертикального меню</title>
     <style>
@@ -17,11 +18,22 @@
         .menu ul {
             list-style: none;
         }
+        
 
         .menu li {}
+        .menu li:before{
+            content:"\f0c8";
+            font-family: FontAwesome;
+            margin-left:10px;
+        }
 
         .menu li a {}
+        .menu li li:before{
+            content:"\f146";
+            font-family: FontAwesome;
+            margin-left:10px;
 
+        }
         .menu li a:hover {}
 
         .menu li ul {
@@ -29,14 +41,23 @@
             position: relative;
             top: 0;
             width: 150px;
+            margin-bottom: 15px;
+            
 
         }
 
         li:hover ul {
             display: block;
         }
+        li:before ul{
+            content:"f146";
+            font-family: FontAwesome;
+            margin-left:10px;
+
+        }
 
         .menu li li {}
+        
     </style>
 </head>
 

@@ -13,27 +13,37 @@
         .menu {
             width: 200px;
             background: #fff;
+
         }
 
         .menu ul {
             list-style: none;
-        }
-        
 
-        .menu li {}
-        .menu li:before{
-            content:"\f0c8";
+        }
+
+
+        .menu li {
+            margin-left: -30px;
+        }
+
+        .menu li:before {
+            content: "\f0c8";
             font-family: FontAwesome;
-            margin-left:10px;
+            margin-left: 10px;
+            margin-right: 7px;
         }
 
         .menu li a {}
-        .menu li li:before{
-            content:"\f146";
+        .menu li li{
+            padding: 7px;
+        }
+        .menu li li:before {
+            content: "\f146";
             font-family: FontAwesome;
-            margin-left:10px;
+            margin-left: 10px;
 
         }
+
         .menu li a:hover {}
 
         .menu li ul {
@@ -42,22 +52,15 @@
             top: 0;
             width: 150px;
             margin-bottom: 15px;
-            
+
 
         }
 
         li:hover ul {
             display: block;
         }
-        li:before ul{
-            content:"f146";
-            font-family: FontAwesome;
-            margin-left:10px;
-
-        }
 
         .menu li li {}
-        
     </style>
 </head>
 

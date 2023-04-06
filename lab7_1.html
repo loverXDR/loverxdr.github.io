@@ -20,17 +20,17 @@
     <!-- "Шапка" сайта -->
     <header style="padding-top:5px;">
         <div id="logo" style="float:left">
-          <img src="logo.jpg">
+          <img src="logo.png">
         </div>
         <div id="contacts" style="float:right;">
           <i class="fa fa-mobile fa-lg"></i> +79996023412 |
           <i class="fa fa-envelope fa-lg"></i> loverxdr@yandex.ru
-          <i class="fa fa-facebook-square fa-2x" style="margin-left:10px; color: blue;"></i>
+
         </div>
         <div class="clearfix"></div>
       </header>
     <!-- Навигационное меню -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="padding-top: 5px;">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu">
             <span class="sr-only">Toggle navigation</span>
@@ -54,14 +54,30 @@
           <ul class="nav navbar-nav navbar-right">
             <!-- Пункт меню "Бесплатная консультация" -->
             <li><a  href="#" style="padding-top:8px; padding-bottom:8px;">
-              <span class="btn btn-info"><strong>Free test</strong></span></a>
+              <span class="btn btn-default" style="background-color: ;"><strong>Заказ </strong></span></a>
             </li>
           </ul>
         </div>
       </nav>
   
     <!-- Нижняя часть "шапки" сайта -->
-    <div id="header-bottom"></div>
+    <div id="header-bottom" style="position:relative;">
+        <img src="banner.jpg" style="width:100%;">
+        <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;">
+          <!-- Этот блок будет отображаться на устройствах со средним и большим размером экрана -->
+          <div class="hidden-xs">
+            <h1>Создать сайт<br />
+              <small style="color: white;">Это просто, если эта задача стоит перед нами</small>
+            </h1>
+          </div>
+          <!-- Этот блок будет отображаться только на устройствах с маленьким экраном -->
+          <div class="hidden-sm hidden-md hidden-lg">
+            <p class="lead">Ваш сайт в кратчайшие сроки</p>
+          </div>
+          <!-- Кнопка "Бесплатная консультация" -->
+          <a class="btn btn-primary btn-lg">Создать сайт</a>
+        </div>
+      </div>
     <!-- Блок об услугах компании -->
     <div id="main">
       <!-- Ряд, состоящий из 3 блоков -->
@@ -75,17 +91,17 @@
       </div>
     </div>
     <!-- Блок, содержащий информацию об основных методах компании -->
-    <div id="method">Блок, содержащий информацию об основных методах компании
+    <div id="method">
       <div class="row"></div>
     </div>
     <!-- Блок, содержащий портфолио компании -->
     <div id="work">
-        Блок, содержащий портфолио компании
+
       <div class="row"></div>
     </div>
   </div>
   <!-- Подвал сайта -->
-  <footer>подвал</footer>     
+  <footer></footer>     
 
 
 </body>

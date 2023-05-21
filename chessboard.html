@@ -359,14 +359,24 @@
         </tbody>
     </table>
     <script>
-        let squares = document.querySelectorAll('.square');
-        for (let i = 0; i < squares.length; i++) {
-            if ((Math.floor(i / 8) % 2 === 0 && i % 2 === 0) || (Math.floor(i / 8) % 2 === 1 && i % 2 === 1)) {
-                squares[i].style.backgroundColor = "#ffce9e";
-            } else {
-                squares[i].style.backgroundColor = "#d18b47";
-            }
-        }
+// получаем все ячейки таблицы
+var cells = document.getElementsByTagName("td");
+
+// проходим по всем ячейкам и раскрашиваем в соответствии с шахматной доской
+for (var i = 0; i < cells.length; i++) {
+  var row = Math.floor(i / 10) - 1; // определяем номер строки
+  var col = i % 10 - 1; // определяем номер столбца
+  
+  // проверяем, что ячейка находится внутри доски
+  if (row >= 0 && row <= 7 && col >= 0 && col <= 7) {
+    // определяем цвет ячейки в зависимости от суммы номера строки и номера столбца
+    if ((row + col) % 2 == 0) {
+      cells[i].style.backgroundColor = "#ffce9e"; // светлая ячейка
+    } else {
+      cells[i].style.backgroundColor = "#d18b47"; // темная ячейка
+    }
+  }
+}
     </script>
 </body>
 

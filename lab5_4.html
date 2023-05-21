@@ -5,35 +5,27 @@
 <meta charset="utf-8">
 <title>Использование flex при построении колонок  </title>
 <style type="text/css">
-    div{
-        display: flex;
-        flex-direction:column;
-        flex-wrap: nowrap;
-        justify-content: center;
-
-        
-
+body{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px calc(1rem - 1px);
     }
-#left{
-	background:#ccf;
+	#left{
     width: 200px;
-
-}
-#right{
+	background:#ccf;
+    order: -1;
+	}
+	#right{
+    width: 200px;
 	background:#fcc;
-    width:200px;
-
-
-
-}
-#center{
-	background:#cfc;
+    order: 1;
+	}
+	#center{
     width: 600px;
-
-
-    
-
-}
+	background:#cfc;
+    order: 0;
+	}
 </style>
 </head>
 <body>

@@ -15,6 +15,7 @@ body {
     color: white;
     background-image: url("pattern-wicker-lines.png");
 }
+
 em {
     font-style: italic;
     color: green;
@@ -22,6 +23,16 @@ em {
     text-decoration-thickness: 5px;
     padding: 30px;
 }
-strong {
+@media print {
+    em {
+    color: black;
+  }
+}
+@media print{
+    h1,h2{
+        color: black;
+    }
+}
+strong {    
     font-family: 'Caveat', sans-serif;
 }

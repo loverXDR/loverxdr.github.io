@@ -24,14 +24,9 @@ em {
     padding: 30px;
 }
 @media print {
-    em {
+    em,h1,h2 {
     color: black;
   }
-}
-@media print{
-    h1,h2{
-        color: black;
-    }
 }
 strong {    
     font-family: 'Caveat', sans-serif;

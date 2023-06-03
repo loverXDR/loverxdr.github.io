@@ -33,23 +33,14 @@ export function camelize(str) {
   
   return words.join('');
 }
+import { fib } from './fibfunk.js';
+
 export function fibs(n) {
-  let a = 0n;
-  let b = 1n;
-
-  if (n === 0) {
-      return a;
-  } else if (n === 1) {
-      return b;
-  } else {
-      for (let i = 2; i <= n; i++) {
-          let c = a + b;
-          a = b;
-          b = c;
-      }
-
-      return b;
+  const arr = [];
+  for (let i = 0; i < n; i++) {
+    arr.push(fib(i));
   }
+  return arr;
 }
 export function arrReverseSorted(arr) {
   let sortedArr = arr.slice().sort((a, b) => b - a);

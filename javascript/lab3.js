@@ -1,10 +1,10 @@
 "use strict";
 
-function getDecimal(num) {
-  return Math.abs(num) % 1;
+export function getDecimal(num) {
+  return Math.abs(num - Math.floor(num));
 }
 
-function ucFirst(str) {
+export function ucFirst(str) {
   if (!str) {
     return str;
   } else {
@@ -12,19 +12,19 @@ function ucFirst(str) {
   }
 }
 
-function checkSpam(str) {
+export function checkSpam(str) {
   let lowerStr = str.toLowerCase();
   
   return lowerStr.includes('viagra') || lowerStr.includes('xxx');
 }
-function truncate(str, maxlength) {
+export function truncate(str, maxlength) {
   if (str.length > maxlength) {
     return str.slice(0, maxlength - 1) + '…';
   } else {
     return str;
   }
 }
-function camelize(str) {
+export function camelize(str) {
   let words = str.split('-');
   
   for (let i = 1; i < words.length; i++) {
@@ -33,22 +33,30 @@ function camelize(str) {
   
   return words.join('');
 }
-import { fib } from './lab2.js';
-function fibs(n) {
-  let result = [];
-  
-  for (let i = 0; i < n; i++) {
-    result.push(fib(i));
+export function fibs(n) {
+  let a = 0n;
+  let b = 1n;
+
+  if (n === 0) {
+      return a;
+  } else if (n === 1) {
+      return b;
+  } else {
+      for (let i = 2; i <= n; i++) {
+          let c = a + b;
+          a = b;
+          b = c;
+      }
+
+      return b;
   }
-  
-  return result;
 }
-function arrReverseSorted(arr) {
+export function arrReverseSorted(arr) {
   let sortedArr = arr.slice().sort((a, b) => b - a);
   
   return sortedArr;
 }
-function unique(arr) {
+export function unique(arr) {
   let set = new Set(arr);
   
   return Array.from(set);

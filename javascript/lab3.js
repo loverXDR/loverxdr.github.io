@@ -1,7 +1,8 @@
 "use strict";
 
 export function getDecimal(num) {
-  return Math.abs(num - Math.floor(num));
+  let w = Math.abs(num - Math.floor(num));
+  return parseFloat(w.toFixed(2));
 }
 
 export function ucFirst(str) {

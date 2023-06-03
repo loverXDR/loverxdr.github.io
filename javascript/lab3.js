@@ -2,7 +2,7 @@
 
 export function getDecimal(num) {
   let w = Math.abs(num - Math.floor(num));
-  return parseFloat(w.toFixed(2));
+  return parseFloat (w.toFixed(2));
 }
 
 export function ucFirst(str) {

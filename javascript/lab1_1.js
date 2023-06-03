@@ -64,12 +64,12 @@ function checkAgeAndGender() {
     let num = prompt("Введите количество строк: ");
     let k = Math.floor(num / 5);
     let l = num - 5 * k;
-    let one = "dog dog dog cat cat dog";
-    let two = "dog dog cat cat dog dog";
-    let three = "dog cat cat dog dog dog";
-    let four = "cat cat dog dog dog dog";
-    let five = "cat dog dog dog dog cat";
-    var list = [one, two, three, four, five]
+    let o = "dog dog dog cat cat dog";
+    let t = "dog dog cat cat dog dog";
+    let th = "dog cat cat dog dog dog";
+    let fo = "cat cat dog dog dog dog";
+    let fi = "cat dog dog dog dog cat";
+    var list = [o, t, th, fo, fi]
     for (let i = 1; i <= k; i++) {
         for (let j = 0; j < 5; j++) console.log(list[j]);
     }

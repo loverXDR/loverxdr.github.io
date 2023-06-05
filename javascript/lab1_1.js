@@ -1,8 +1,8 @@
 "use strict";
 
 function checkAgeAndGender() {
-    let age = prompt("Введите ваш возраст:");
-    let gender = prompt("Введите ваш пол (мужчина или женщина):");
+    const age = prompt("Введите ваш возраст:");
+    const gender = prompt("Введите ваш пол (мужчина или женщина):");
   
     if (age >= 0 && age <= 17) {
       alert("Вам работать ещё рано — учитесь");
@@ -18,9 +18,10 @@ function checkAgeAndGender() {
   }
   
   function checkNum() {
-    let num = prompt("Введите целое число:");
+    const num = prompt("Введите целое число:");
     let message;
-    
+    temp=num;
+    temp=num/10
     switch (num) {
       case "1":
         message = "На ветке сидит 1 ворона";
@@ -61,14 +62,14 @@ function checkAgeAndGender() {
   
 
   function drawTable() {
-    let num = prompt("Введите количество строк: ");
-    let k = Math.floor(num / 5);
-    let l = num - 5 * k;
-    let o = "dog dog dog cat cat dog";
-    let t = "dog dog cat cat dog dog";
-    let th = "dog cat cat dog dog dog";
-    let fo = "cat cat dog dog dog dog";
-    let fi = "cat dog dog dog dog cat";
+    const num = prompt("Введите количество строк: ");
+    const k = Math.floor(num / 5);
+    const l = num - 5 * k;
+    const o = "dog dog dog cat cat dog";
+    const t = "dog dog cat cat dog dog";
+    const th = "dog cat cat dog dog dog";
+    const fo = "cat cat dog dog dog dog";
+    const fi = "cat dog dog dog dog cat";
     var list = [o, t, th, fo, fi]
     for (let i = 1; i <= k; i++) {
         for (let j = 0; j < 5; j++) console.log(list[j]);

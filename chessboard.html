@@ -360,12 +360,12 @@
     </table>
     <script>
 // получаем все ячейки таблицы
-var cells = document.getElementsByTagName("td");
+const cells = document.getElementsByTagName("td");
 
 // проходим по всем ячейкам и раскрашиваем в соответствии с шахматной доской
-for (var i = 0; i < cells.length; i++) {
-  var row = Math.floor(i / 10) - 1; // определяем номер строки
-  var col = i % 10 - 1; // определяем номер столбца
+for (let i = 0; i < cells.length; i++) {
+  const row = Math.floor(i / 10) - 1; // определяем номер строки
+  const col = i % 10 - 1; // определяем номер столбца
   
   // проверяем, что ячейка находится внутри доски
   if (row >= 0 && row <= 7 && col >= 0 && col <= 7) {

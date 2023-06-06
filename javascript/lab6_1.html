@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Text</title>
 </head>
+
 <body>
 	<input type="button" id="hider" value="Спрятать текст">
 
 	<div id="text">Текст</div>
 
 	<script>
-    /* ваш код */
+		const hiderBtn = document.getElementById('hider');
+		const textDiv = document.getElementById('text');
+
+		hiderBtn.addEventListener('click', function () {
+			if (textDiv.style.display === 'none') {
+				textDiv.style.display = 'block';
+				hiderBtn.value = 'Спрятать текст';
+			} else {
+				textDiv.style.display = 'none';
+				hiderBtn.value = 'Показать текст';
+			}
+		});
 	</script>
 </body>
+
 </html>

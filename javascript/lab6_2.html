@@ -43,5 +43,13 @@
 	    	<li>Пирожное</li>
 	  	</ul>
 	</div>
+	<script>
+		const menuDiv = document.querySelector('.menu');
+		const titleSpan = document.querySelector('.title');
+	
+		titleSpan.addEventListener('click', function() {
+		  menuDiv.classList.toggle('open');
+		});
+	  </script>
 </body>
 </html>

@@ -46,10 +46,10 @@
   </ul>
 
   <script>
-    let lis = document.getElementsByTagName('li');
+    const lis = document.getElementsByTagName('li');
     for (let i = 0; i < lis.length; i++) {
-      let text = lis[i].childNodes[0].nodeValue.trim();
-      let nestedLis = lis[i].getElementsByTagName('li').length;
+      const text = lis[i].childNodes[0].nodeValue.trim();
+      const nestedLis = lis[i].getElementsByTagName('li').length;
       console.log(text + " - " + nestedLis);
     }
   </script>

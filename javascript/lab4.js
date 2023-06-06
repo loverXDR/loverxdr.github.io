@@ -43,7 +43,7 @@ function isEmpty(obj) {
 
 console.log(isEmpty(book1));
 console.log(isEmpty(book2));
-
+console.log('----------------------------------------------------')
 let obj = {
   className: 'open menu'
 };
@@ -73,7 +73,7 @@ obj.removeClass = function(cls) {
 console.log(obj.addClass('new'));
 console.log(obj.addClass('open'));
 console.log(obj.removeClass('menu'));
-
+console.log('----------------------------------------------------')
 let vasya = { name: "Вася", age: 23 };
 let masha = { name: "Маша", age: 18 };
 let vova = { name: "Вова", age: 12 };
@@ -82,7 +82,7 @@ let people = [ vasya , masha , vova ];
 people.sort((a, b) => a.age - b.age);
 
 console.log(people);
-
+console.log('----------------------------------------------------')
 function getSecondsToday() {
   let now = new Date();
   let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());

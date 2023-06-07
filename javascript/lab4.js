@@ -84,8 +84,8 @@ people.sort((a, b) => a.age - b.age);
 console.log(people);
 console.log('----------------------------------------------------')
 function getSecondsToday() {
-  let now = new Date();
-  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   
   return Math.round((now - today) / 1000);
 }
@@ -93,13 +93,13 @@ function getSecondsToday() {
 console.log(getSecondsToday());
 
 function formatDate(date) {
-  let day = date.getDate();
+  const day = date.getDate();
   if (day < 10) day = '0' + day;
   
-  let month = date.getMonth() + 1;
+  const month = date.getMonth() + 1;
   if (month < 10) month = '0' + month;
   
-  let year = date.getFullYear() % 100;
+  const year = date.getFullYear() % 100;
   if (year < 10) year = '0' + year;
   
   return day + '.' + month + '.' + year;

@@ -60,7 +60,7 @@ function checkNumber() {
   let num;
   do {
     num = prompt("Введите число больше 100:");
-  } while (num <= 100 && num !== null || isNaN(num));
+  } while (num !== null && (isNaN(num) || +num <= 100));
 }
 
 function checkPrime() {

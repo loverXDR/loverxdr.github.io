@@ -2,49 +2,49 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title> placeholder</title>
-  <style>
-    .placeholder::-webkit-input-placeholder {
-      color: rgb(58, 85, 241);
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeholder</title>
+    <style>
+        .placeholder::-webkit-input-placeholder {
+            color: rgb(48, 62, 255);
 
-    div {
-      color: rgb(58, 85, 241);
-    }
+        }
+    </style>
 
-    .data-placeholder {
-      color: rgb(58, 85, 241);
-    }
-  </style>
 </head>
 
 <body>
+    <div id="texfield">
+        <label for="l"></label>
+        <input id="texfield" type="text" class='placeholder' data-placeholder="Введите текст">
+    </div>
 
-  <div></div>
-  <input type="text" class='data-placeholder' data-placeholder="text">
+    <script>
+        'use strict';
 
-  <script>
-    let input = document.querySelector('input[data-placeholder]');
-    let div = document.querySelector('div');
+        let tf = document.getElementById("texfield");
+        let input = tf.getElementsByTagName("input")[0];
+        let lb = tf.getElementsByTagName("label")[0];
+        lb.style.display = "none";
 
-    input.value = input.getAttribute('data-placeholder');
+        input.setAttribute("placeholder", input.dataset.placeholder);
+        lb.innerHTML = input.dataset.placeholder;
 
-    input.onfocus = function () {
-      div.innerHTML = input.getAttribute('data-placeholder');
-      input.setAttribute('data-placeholder', '');
-      input.value = '';
-    };
+        input.addEventListener("focus", function () {
+            lb.style.display = "block";
+            input.setAttribute("placeholder", "");
+        });
 
-    input.onblur = function () {
-      input.setAttribute('data-placeholder', div.innerHTML);
-      div.innerHTML = '';
-      input.value = input.getAttribute('data-placeholder');
-    };
+        input.addEventListener("blur", function () {
 
-  </script>
+            lb.style.display = "none";
+            input.setAttribute("placeholder", input.dataset.placeholder);
 
+        });
 
+    </script>
 </body>
 
 </html>
